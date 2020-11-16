@@ -1,0 +1,68 @@
+.cover {
+  height: 35vh;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.info {
+  height: 80px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .title {
+    margin-left: 10px;
+
+    :first-child {
+      font-size: 1.8rem;
+      margin-right: 5px;
+      display: inline;
+      color: black;
+    }
+
+    .checked-icon {
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0;
+      text-align: left;
+      font-size: 0.9rem;
+      color: #98949c;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #98949c;
+  
+  div {
+    margin: 30px 0;
+
+    p {
+      margin: 0;
+    }
+
+    .action-icon {
+      font-size: 2rem;
+
+    }
+  }
+}
