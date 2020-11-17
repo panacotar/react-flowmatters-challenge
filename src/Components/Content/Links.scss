@@ -1,0 +1,6 @@
+@import "../../variables.scss";
+
+.pressed {
+  border-bottom: 3px solid $primary;
+  color: $primary;
+}
