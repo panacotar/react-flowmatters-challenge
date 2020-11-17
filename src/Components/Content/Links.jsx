@@ -4,8 +4,9 @@ import Button from "@material-ui/core/Button";
 import "./Links.scss";
 
 const Links = () => {
+
   return (
-    <div>
+    <div className="links">
       <Button>Home</Button>
       <Button>Posts</Button>
       <Button>Photos</Button>

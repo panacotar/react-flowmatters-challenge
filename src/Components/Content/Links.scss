@@ -1,5 +1,11 @@
 @import "../../variables.scss";
 
+.links {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
 .pressed {
   border-bottom: 3px solid $primary;
   color: $primary;
