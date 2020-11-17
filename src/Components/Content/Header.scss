@@ -1,3 +1,5 @@
+@import "../../variable.scss";
+
 .cover {
   height: 35vh;
 
@@ -7,16 +9,30 @@
   }
 }
 
+.responsive-img {
+  position: relative;
+  max-width: 100%;
+}
+
+.responsive-img__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .info {
   height: 80px;
-  border: 2px solid black;
   display: flex;
   align-items: center;
   padding-left: 20px;
 
   .avatar {
-    width: 70px;
-    height: 70px;
+    width: 20%;
+    height: 80%;
 
     img {
       max-width: 100%;
@@ -26,6 +42,7 @@
 
   .title {
     margin-left: 10px;
+    height: 60%;
 
     :first-child {
       font-size: 1.8rem;
@@ -48,20 +65,29 @@
 }
 
 .actions {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   color: #98949c;
 
-  div {
-    margin: 30px 0;
+  .btn-send-msg {
+    width: 90%;
+    background: $primary;
+  }
 
-    p {
-      margin: 0;
-    }
+  .main-actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #98949c;
 
-    .action-icon {
-      font-size: 2rem;
+    div {
+      margin: 30px 0;
+
+      p {
+        margin: 0;
+      }
+
+      .action-icon {
+        font-size: 2rem;
+      }
     }
   }
 }
