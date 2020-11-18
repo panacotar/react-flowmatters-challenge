@@ -3,20 +3,25 @@
 .toggle-btn {
   margin: 4px;
   background-color: white;
+  color: #afb4bd;
 
   label {
     float: left;
     // width: 4em;
-
+    display: flex;
+    align-items: center;
     span {
       text-align: center;
-      padding: 3px 0px;
+      // padding: 3px 0px;
       display: block;
+      margin: 3px;
     }
 
     input {
       display: none;
-      &:checked + span {
+      
+      &:checked + span,
+      &:checked + span + span {
         color: $primary;
       }
     }
