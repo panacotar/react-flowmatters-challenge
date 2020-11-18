@@ -2,9 +2,9 @@
 
 .toggle-btn {
   margin: 4px;
-  background-color: white;
+  // background-color: white;
   color: #afb4bd;
- 
+
   .label-flex {
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
 
     input {
       display: none;
-      
+
       &:checked + span,
       &:checked + span + span {
         color: $primary;
