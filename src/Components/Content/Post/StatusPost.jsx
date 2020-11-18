@@ -55,8 +55,10 @@ const StatusPost = () => {
   }
 
   return (
-    <div className={classes.root}>
+    
+    <div >
       <Tabs
+      className={classes.root}
         style={{height: "20px"}}
         value={value}
         onChange={handleChange}
