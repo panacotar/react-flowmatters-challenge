@@ -66,9 +66,9 @@ const Post = () => {
         <hr />
       </div>
       <div className="post-actions">
-        <ToggleBtn text="Like" icon={<AiFillLike />} />
-        <ToggleBtn text="Comment" icon={<FaCommentAlt />} />
-        <ToggleBtn text="Share" icon={<IoMdShareAlt />} />
+        <ToggleBtn inline text="Like" icon={<AiFillLike />} />
+        <ToggleBtn inline text="Comment" icon={<FaCommentAlt />} />
+        <ToggleBtn inline text="Share" icon={<IoMdShareAlt />} />
       </div>
       <div className="post-comment">
         <AiFillLike className="liked" />

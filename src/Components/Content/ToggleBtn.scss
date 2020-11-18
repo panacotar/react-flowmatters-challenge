@@ -4,12 +4,14 @@
   margin: 4px;
   background-color: white;
   color: #afb4bd;
-
+ 
+  .label-flex {
+    display: flex;
+    align-items: center;
+  }
   label {
     float: left;
     // width: 4em;
-    display: flex;
-    align-items: center;
     span {
       text-align: center;
       // padding: 3px 0px;
