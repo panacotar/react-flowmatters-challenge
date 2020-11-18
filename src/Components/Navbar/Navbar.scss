@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .navbar {
   height: 50px;
   background-color: #4267b2;
@@ -5,16 +7,61 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-}
 
-.back-arr {
-  color: #f2f2f2;
-  width: 2em;
-  height: 2em;
-}
+  .back-arr {
+    color: #f2f2f2;
+    width: 2em;
+    height: 2em;
+  }
 
-.dots-icon {
-  color: #f2f2f2;
-  width: 1.8em;
-  height: 2em;
+  .dots-icon {
+    color: #f2f2f2;
+    width: 1.8em;
+    height: 2em;
+  }
+
+  @media (min-width: $breakpoint-web) {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    .fb-icon {
+      font-size: 2rem;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .search-input {
+      width: 50%;
+    }
+
+    .status {
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      > div {
+        span {
+          background-color: #29487d;
+          padding: 2px;
+          margin-left: 4px;
+        }
+      }
+
+      .status-icons,
+      .status-menu {
+        > * {
+          font-size: 1.5rem;
+          margin: 5px;
+        }
+      }
+    }
+  }
 }

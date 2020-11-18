@@ -9,7 +9,7 @@ const SearchInput = () => {
   return (
     <div>
       <TextField
-        style={{ margin: "30px" }}
+        style={{width: "100%"}}
         className="search-input"
         variant="outlined"
         placeholder="Search"
@@ -17,8 +17,8 @@ const SearchInput = () => {
           style: {
             fontSize: "1rem",
             height: "30px",
-            paddingLeft: "60px",
             color: "#7c91bf",
+            width: "100%"
           },
           startAdornment: (
             <InputAdornment position="start">
