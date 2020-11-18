@@ -4,9 +4,13 @@
   background-color: white;
   display: flex;
   justify-content: space-around;
-}
 
-.pressed {
-  border-bottom: 3px solid $primary;
-  color: $primary;
+  .pressed {
+    border-bottom: 3px solid $primary;
+    color: $primary;
+  }
+
+  @media (min-width: $breakpoint-web) {
+    display: none;
+  }
 }
