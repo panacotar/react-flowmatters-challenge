@@ -7,6 +7,7 @@ import { IoMdShareAlt } from "react-icons/io";
 import { BsBookmarkFill } from "react-icons/bs";
 
 import "./Header.scss";
+import ToggleBtn from "./ToggleBtn";
 
 const ResponsiveImage = ({ src, width, height }) => {
   return (
@@ -53,28 +54,15 @@ const Header = () => {
         <Button
           variant="contained"
           color="primary"
-          href="#"
           className="btn-send-msg"
         >
           Send Message
         </Button>
         <div className="main-actions">
-          <div>
-            <AiFillLike className="action-icon" />
-            <p>Like</p>
-          </div>
-          <div>
-            <MdRssFeed className="action-icon" />
-            <p>Follow</p>
-          </div>
-          <div>
-            <IoMdShareAlt className="action-icon" />
-            <p>Share</p>
-          </div>
-          <div>
-            <BsBookmarkFill className="action-icon" />
-            <p>Save</p>
-          </div>
+          <ToggleBtn text="Like" icon={<AiFillLike className="action-icon" />}/>
+          <ToggleBtn text="Follow" icon={<MdRssFeed className="action-icon" />}/>
+          <ToggleBtn text="Share" icon={<IoMdShareAlt className="action-icon" />}/>
+          <ToggleBtn text="Save" icon={<BsBookmarkFill className="action-icon" /> }/>
         </div>
       </div>
     </div>
