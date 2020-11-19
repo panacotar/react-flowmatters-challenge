@@ -25,7 +25,7 @@ const useStyles = makeStyles({
 });
 
 const SideBar = () => {
-  const classes = useStyles();
+  const { root, wrapper, selected, indicator, vertical } = useStyles();
   const [value, setValue] = useState(0);
 
   const headers = [
@@ -70,20 +70,20 @@ const SideBar = () => {
           indicatorColor="primary"
           aria-label="Vertical tabs"
           orientation="vertical"
-          className={classes.root}
-          classes={{ indicator: classes.indicator, vertical: classes.vertical }}
+          className={root}
+          classes={{ indicator, vertical }}
         >
-          {headers.map((header) => {
+          {headers.map((header, ix) => {
             return (
               <Tab
+                key={ix}
                 disableRipple
                 classes={{
-                  root: classes.root,
-                  wrapper: classes.wrapper,
-                  selected: classes.selected,
+                  root,
+                  wrapper,
+                  selected,
                 }}
                 label={header}
-                contentContainerStyle={{ background: "#FFF" }}
               />
             );
           })}
