@@ -105,6 +105,7 @@
       justify-content: space-between;
       padding: 0 20px;
       margin-top: 10px;
+      height: 40px;
 
       .btn-group {
         
@@ -112,7 +113,7 @@
           height: 30px;
           font-size: 0.8rem;
           padding: 10px;
-          svg {
+          & > svg {
             color: #bec2c9;
           }
 

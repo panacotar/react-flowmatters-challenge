@@ -43,9 +43,7 @@ const ResponsiveImage = ({ src, width, height }) => {
   );
 };
 
-
 const Header = () => {
-
   return (
     <div>
       <Mobile>
@@ -97,8 +95,8 @@ const Header = () => {
         <div className="Header">
           <ResponsiveImage src="img/cover.jpg" width={897} height={397} />
           <div className="actions">
-    
-              <ButtonGroup className="btn-group" variant="contained" color="default">
+            <div className="btn-group">
+              <ButtonGroup variant="contained" color="default">
                 <Button>
                   <AiFillLike /> <span>Liked</span> <ArrowDropDownIcon />
                 </Button>
@@ -111,7 +109,8 @@ const Header = () => {
                   <HiDotsHorizontal /> <span>More</span> <ArrowDropDownIcon />
                 </Button>
               </ButtonGroup>
-            
+            </div>
+
             <div>
               <Button
                 variant="contained"
