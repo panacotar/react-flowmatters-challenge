@@ -1,7 +1,9 @@
+@import "../../variables.scss";
+
 .photos {
   background-color: white;
   margin: 10px 0;
-  
+
   .photos-header {
     text-align: left;
     font-size: 1.2rem;
@@ -14,14 +16,38 @@
     justify-content: center;
     gap: 10px;
 
-    .page-image {
+    .photo-flex-item {
       flex: 0 0 30%;
       height: 30%;
-      
+
       > img {
         width: 100%;
       }
     }
   }
-}
 
+  @media (min-width: $breakpoint-web) {
+    border: 1px solid #dfe0e4;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+
+    .photos-header {
+      background-color: $secondary;
+      padding: 7px 15px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #4b4f56;
+    }
+
+    .photos-gallery {
+      gap: 3px;
+      row-gap: 0;
+      height: 270px;
+      padding: 5px;
+      .photo-flex-item {
+        // height: 0;
+        flex: 1 0 30%;
+      }
+    }
+
+  }
+}

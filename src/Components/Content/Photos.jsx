@@ -10,7 +10,7 @@ const Photos = () => {
       <div className="photos-gallery">
         {data.map((src) => {
           return (
-            <div className="page-image" key={src.id}>
+            <div className="photo-flex-item" key={src.id}>
               <img src={src.thumbnail} alt="thumbnail" />
             </div>
           );
