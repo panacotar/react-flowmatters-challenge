@@ -10,8 +10,6 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
-
-
 import "./Navbar.scss";
 import SearchInput from "./SearchInput";
 

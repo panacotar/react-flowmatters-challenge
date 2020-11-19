@@ -20,8 +20,8 @@ const SearchInput = () => {
             color: "#7c91bf",
             width: "100%"
           },
-          startAdornment: (
-            <InputAdornment position="start">
+          endAdornment: (
+            <InputAdornment position="end">
               <SearchIcon className="search-icon" />
             </InputAdornment>
           ),

@@ -45,81 +45,69 @@ const ResponsiveImage = ({ src, width, height }) => {
 
 const Header = () => {
   return (
-    <div>
+    <div className="Header">
       <Mobile>
-        <div className="Header">
-          <ResponsiveImage src="img/cover-sm.png" width={768} height={340} />
-          <div className="info">
-            <div className="avatar">
-              <img src="img/avatar-sm.png" alt="Flowmatters avatar" />
-            </div>
-            <div className="title">
-              <p>Flowmatters</p>
-              <CheckCircleIcon
-                className="checked-icon"
-                style={{ fill: "#7F7F7F" }}
-              />
-              <p>@EveryInteraction</p>
-            </div>
+        <ResponsiveImage src="img/cover-sm.png" width={768} height={340} />
+        <div className="info">
+          <div className="avatar">
+            <img src="img/avatar-sm.png" alt="Flowmatters avatar" />
           </div>
-          <div className="actions">
-            <Button
-              variant="contained"
-              color="primary"
-              className="btn-send-msg"
-            >
-              Send Message
-            </Button>
-            <div className="main-actions">
-              <ToggleBtn
-                text="Like"
-                icon={<AiFillLike className="action-icon" />}
-              />
-              <ToggleBtn
-                text="Follow"
-                icon={<MdRssFeed className="action-icon" />}
-              />
-              <ToggleBtn
-                text="Share"
-                icon={<IoMdShareAlt className="action-icon" />}
-              />
-              <ToggleBtn
-                text="Save"
-                icon={<BsBookmarkFill className="action-icon" />}
-              />
-            </div>
+          <div className="title">
+            <p>Flowmatters</p>
+            <CheckCircleIcon
+              className="checked-icon"
+              style={{ fill: "#7F7F7F" }}
+            />
+            <p>@EveryInteraction</p>
+          </div>
+        </div>
+        <div className="actions">
+          <Button variant="contained" color="primary" className="btn-send-msg">
+            Send Message
+          </Button>
+          <div className="main-actions">
+            <ToggleBtn
+              text="Like"
+              icon={<AiFillLike className="action-icon" />}
+            />
+            <ToggleBtn
+              text="Follow"
+              icon={<MdRssFeed className="action-icon" />}
+            />
+            <ToggleBtn
+              text="Share"
+              icon={<IoMdShareAlt className="action-icon" />}
+            />
+            <ToggleBtn
+              text="Save"
+              icon={<BsBookmarkFill className="action-icon" />}
+            />
           </div>
         </div>
       </Mobile>
       <Desktop>
-        <div className="Header">
-          <ResponsiveImage src="img/cover.jpg" width={806} height={357} /> {/* 397 */}
-          <div className="actions">
-            <div className="btn-group">
-              <ButtonGroup variant="contained" >
-                <Button>
-                  <AiFillLike /> <span>Liked</span> <ArrowDropDownIcon />
-                </Button>
-                <Button>
-                  {" "}
-                  <FaFacebookMessenger /> <span>Message</span>
-                </Button>
-                <Button>
-                  {" "}
-                  <HiDotsHorizontal /> <span>More</span> <ArrowDropDownIcon />
-                </Button>
-              </ButtonGroup>
-            </div>
-
-            <div>
-              <Button
-                variant="contained"
-                color="primary"
-                className="btn-contact"
-              >
-                Contact Us
+        <ResponsiveImage src="img/cover.jpg" width={709} height={314} />
+        <div className="actions">
+          <div className="btn-group">
+            <ButtonGroup variant="contained">
+              <Button>
+                <AiFillLike /> <span>Liked</span> <ArrowDropDownIcon />
               </Button>
-            </div>
+              <Button>
+                {" "}
+                <FaFacebookMessenger /> <span>Message</span>
+              </Button>
+              <Button>
+                {" "}
+                <HiDotsHorizontal /> <span>More</span> <ArrowDropDownIcon />
+              </Button>
+            </ButtonGroup>
+          </div>
+
+          <div>
+            <Button variant="contained" color="primary" className="btn-contact">
+              Contact Us
+            </Button>
           </div>
         </div>
       </Desktop>

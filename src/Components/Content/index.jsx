@@ -21,27 +21,23 @@ const Mobile = ({ children }) => {
 
 const Content = () => {
   return (
-    <div>
+    <div className="content">
       <Mobile>
-        <div className="content">
-          <Header />
-          <Links />
-          <Photos />
+        <Header />
+        <Links />
+        <Photos />
+        <StatusPost />
+        <Post />
+      </Mobile>
+      <Desktop>
+        <Header />
+
+        <div className="posts">
           <StatusPost />
           <Post />
         </div>
-      </Mobile>
-      <Desktop>
-        <div className="content">
-          <Header />
-          <div className="content-flex">
-            <div className="posts">
-              <StatusPost />
-              <Post />
-            </div>
-            <ContentSidebar />
-          </div>
-        </div>
+        <ContentSidebar />
+        
       </Desktop>
     </div>
   );
