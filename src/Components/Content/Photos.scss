@@ -29,6 +29,8 @@
   @media (min-width: $breakpoint-web) {
     border: 1px solid #dfe0e4;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    max-width: 267px;
+    max-height: 302px;
 
     .photos-header {
       background-color: $secondary;
@@ -48,6 +50,5 @@
         flex: 1 0 30%;
       }
     }
-
   }
 }

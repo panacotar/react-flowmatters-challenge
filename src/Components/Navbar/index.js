@@ -7,8 +7,8 @@ import { GrFacebook } from "react-icons/gr";
 import { FaUserFriends } from "react-icons/fa";
 import { GiEarthAmerica } from "react-icons/gi";
 import { HiMenuAlt3 } from "react-icons/hi";
-import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import QuestionAnswerIcon from "@material-ui/icons/QuestionAnswer";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
 import "./Navbar.scss";
 import SearchInput from "./SearchInput";
@@ -25,33 +25,29 @@ const Mobile = ({ children }) => {
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="navbar">
       <Mobile>
-        <div className="navbar">
-          <IoIosArrowBack className="back-arr" />
-          <SearchInput />
-          <HiDotsHorizontal className="dots-icon" />
-        </div>
+        <IoIosArrowBack className="back-arr" />
+        <SearchInput />
+        <HiDotsHorizontal className="dots-icon" />
       </Mobile>
       <Desktop>
-        <div className="navbar">
+        <div>
+          <GrFacebook className="fb-icon" />
+          <SearchInput />
+        </div>
+        <div className="status">
           <div>
-            <GrFacebook className="fb-icon" />
-            <SearchInput />
+            Home <span>5</span>
           </div>
-          <div className="status">
-            <div>
-              Home <span>5</span>
-            </div>
-            <div className="status-icons">
-              <FaUserFriends />
-              <QuestionAnswerIcon />
-              <GiEarthAmerica />
-            </div>
-            <div className="status-menu">
-              <HiMenuAlt3 />
-              <ArrowDropDownIcon />
-            </div>
+          <div className="status-icons">
+            <FaUserFriends />
+            <QuestionAnswerIcon />
+            <GiEarthAmerica />
+          </div>
+          <div className="status-menu">
+            <HiMenuAlt3 />
+            <ArrowDropDownIcon />
           </div>
         </div>
       </Desktop>

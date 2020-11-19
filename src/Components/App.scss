@@ -7,8 +7,12 @@
     .main {
       padding: 0 10vw;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       background-color: #e9eaed;
+
+      .page {
+        max-width: 836px;
+      }
     }
   }
 }

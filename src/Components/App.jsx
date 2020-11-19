@@ -5,6 +5,8 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import "./App.scss";
 import NavBar from "./Navbar";
+import Header from "./Content/Header";
+import Links from "./Content/Links";
 import SideBar from "./Sidebar";
 import Content from "./Content";
 import BottomNav from "./Bottom-nav/BottomNav";
@@ -31,9 +33,14 @@ function App() {
         <NavBar />
         <div className="main">
           <SideBar />
-          <Content />
+          <div className="page">
+            <Header />
+            <Links />
+            <Content />
+          </div>
+
+          <BottomNav />
         </div>
-        <BottomNav />
       </div>
     </ThemeProvider>
   );

@@ -28,9 +28,6 @@ const Mobile = ({ children }) => {
 const ResponsiveImage = ({ src, width, height }) => {
   return (
     <div
-      style={{
-        width,
-      }}
       className="responsive-img"
     >
       <div
