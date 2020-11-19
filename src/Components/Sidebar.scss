@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+.sidebar {
+  @media (max-width: $breakpoint-web) {
+    display: none;
+  }
+
+  margin-top: 15px;
+  flex-grow: 1;
+  height: 50vh;
+
+  .avatar {
+    width: 80%;
+    margin: auto;
+    padding: 3px 3px 0 3px;
+    background-color: white;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .title {
+    margin-top: 20px;
+
+    span {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: 10px;
+      font-size: 1.5rem;
+
+      svg {
+        
+        color: #7f7f7f;
+      }
+    }
+
+    p {
+      text-align: left;
+      padding: 0 10px;
+      margin-left: 5px;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #98949c;
+    }
+  }
+}

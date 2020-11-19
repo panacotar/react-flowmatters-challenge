@@ -2,6 +2,12 @@
 
 .App {
   text-align: center;
-  // width: 100vw;
-  // height: 100vh;
+
+  @media (min-width: $breakpoint-web) {
+    .main {
+      padding: 0 10vw;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
