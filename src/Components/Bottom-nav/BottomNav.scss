@@ -1,0 +1,7 @@
+@import "../../variables.scss";
+
+.Bottom-nav {
+  @media (min-width: $breakpoint-web) {
+    display: none;
+  }
+}

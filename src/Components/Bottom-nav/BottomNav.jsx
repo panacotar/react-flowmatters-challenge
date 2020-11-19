@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core/";
+
+import "./BottomNav.scss";
 import { BiNews } from "react-icons/bi";
 import { FaUserFriends } from "react-icons/fa";
 import { GiEarthAmerica } from "react-icons/gi";
@@ -22,27 +24,29 @@ const BottomNav = () => {
   const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      className={classes.root}
-    >
-      <BottomNavigationAction className={classes.action} icon={<BiNews />} />
-      <BottomNavigationAction
-        className={classes.action}
-        icon={<FaUserFriends />}
-      />
-      <BottomNavigationAction
-        className={classes.action}
-        icon={<GiEarthAmerica />}
-      />
-      <BottomNavigationAction
-        className={classes.action}
-        icon={<CgMenuGridO />}
-      />
-    </BottomNavigation>
+    <div className="Bottom-nav">
+      <BottomNavigation
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+        className={classes.root}
+      >
+        <BottomNavigationAction className={classes.action} icon={<BiNews />} />
+        <BottomNavigationAction
+          className={classes.action}
+          icon={<FaUserFriends />}
+        />
+        <BottomNavigationAction
+          className={classes.action}
+          icon={<GiEarthAmerica />}
+        />
+        <BottomNavigationAction
+          className={classes.action}
+          icon={<CgMenuGridO />}
+        />
+      </BottomNavigation>
+    </div>
   );
 };
 
