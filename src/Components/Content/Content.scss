@@ -3,8 +3,18 @@
 .content {
   // height: 70vh;
   width: 100%;
-
+  
   @media (min-width: $breakpoint-web) {
-    width: 80%;
+    width: 90%;
+
+    .content-flex {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .posts {
+      width: 60%;
+    }
   }
 }
