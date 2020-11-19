@@ -56,7 +56,7 @@ const StatusPost = () => {
 
   return (
     
-    <div >
+    <div className="Status-post" >
       <Tabs
       className={classes.root}
         style={{height: "20px"}}
