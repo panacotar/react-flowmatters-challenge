@@ -93,10 +93,10 @@ const Header = () => {
       </Mobile>
       <Desktop>
         <div className="Header">
-          <ResponsiveImage src="img/cover.jpg" width={897} height={397} />
+          <ResponsiveImage src="img/cover.jpg" width={806} height={357} /> {/* 397 */}
           <div className="actions">
             <div className="btn-group">
-              <ButtonGroup variant="contained" color="default">
+              <ButtonGroup variant="contained" >
                 <Button>
                   <AiFillLike /> <span>Liked</span> <ArrowDropDownIcon />
                 </Button>
