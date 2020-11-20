@@ -15,7 +15,6 @@ const Slider = () => {
     setActiveIx(ix);
   };
 
-  console.log(activeIx);
   const nextSlide = () => {
     let ix = activeIx;
     ix === dataLength - 1 ? (ix = 0) : ix++;

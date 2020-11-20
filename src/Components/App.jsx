@@ -5,7 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import "./App.scss";
 import NavBar from "./Navbar";
-import Header from "./Content/Header";
+import Header from "./Header";
 import Links from "./Content/Links";
 import SideBar from "./Sidebar";
 import Content from "./Content";
