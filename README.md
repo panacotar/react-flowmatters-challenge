@@ -10,6 +10,7 @@ Some of the packages used:
 - material-ui [ core, icons, styles ]
 - React-icons
 
+[See live demo](https://flowmatters-frontend-test.netlify.app/)
 
 ### Scripts
 
