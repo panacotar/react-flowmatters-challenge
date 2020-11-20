@@ -5,8 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import "./Links.scss";
 
 const useStyles = makeStyles({
-  root: {
-    height: 20,
+  tabRoot: {
+    width: "20%",
+    minWidth: "10px",
   },
 });
 
@@ -21,20 +22,18 @@ const Links = () => {
   return (
     <div className="links">
       <Tabs
-        className={classes.root}
-        style={{ height: "20px" }}
+        style={{ height: "20px", width: "100%" }}
         value={value}
         onChange={handleChange}
-        variant="scrollable"
-        aria-label="icon label tabs "
+        aria-label="icon label tabs"
         indicatorColor="primary"
         textColor="primary"
       >
-        <Tab label={<div>Home </div>} />
-        <Tab label={<div>Posts </div>} />
-        <Tab label={<div>Photos </div>} />
-        <Tab label={<div>Videos </div>} />
-        <Tab label={<div>Info </div>} />
+        <Tab classes={{ root: classes.tabRoot }} label={<div>Home </div>} />
+        <Tab classes={{ root: classes.tabRoot }} label={<div>Posts </div>} />
+        <Tab classes={{ root: classes.tabRoot }} label={<div>Photos </div>} />
+        <Tab classes={{ root: classes.tabRoot }} label={<div>Videos </div>} />
+        <Tab classes={{ root: classes.tabRoot }} label={<div>Info </div>} />
       </Tabs>
     </div>
   );
