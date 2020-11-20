@@ -47,47 +47,49 @@ const SideBar = () => {
   return (
     <div className="sidebar">
       <div>
-        <div className="info">
-          <div className="avatar">
-            <img src="img/avatar-sm.png" alt="Flowmatters avatar" />
-          </div>
-          <div className="title">
-            <span>
-              Flowmatters{" "}
-              <CheckCircleIcon
-                className="checked-icon"
-                style={{ fill: "#7F7F7F" }}
-              />
-            </span>
-            <p>@EveryInteraction</p>
+        <div>
+          <div className="info">
+            <div className="avatar">
+              <img src="img/avatar-sm.png" alt="Flowmatters avatar" />
+            </div>
+            <div className="title">
+              <span>
+                Flowmatters{" "}
+                <CheckCircleIcon
+                  className="checked-icon"
+                  style={{ fill: "#7F7F7F" }}
+                />
+              </span>
+              <p>@EveryInteraction</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          aria-label="Vertical tabs"
-          orientation="vertical"
-          className={root}
-          classes={{ indicator, vertical }}
-        >
-          {headers.map((header, ix) => {
-            return (
-              <Tab
-                key={ix}
-                disableRipple
-                classes={{
-                  root,
-                  wrapper,
-                  selected,
-                }}
-                label={header}
-              />
-            );
-          })}
-        </Tabs>
+        <div>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            aria-label="Vertical tabs"
+            orientation="vertical"
+            className={root}
+            classes={{ indicator, vertical }}
+          >
+            {headers.map((header, ix) => {
+              return (
+                <Tab
+                  key={ix}
+                  disableRipple
+                  classes={{
+                    root,
+                    wrapper,
+                    selected,
+                  }}
+                  label={header}
+                />
+              );
+            })}
+          </Tabs>
+        </div>
       </div>
     </div>
   );

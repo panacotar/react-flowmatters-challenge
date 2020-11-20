@@ -1,4 +1,9 @@
 .Content-sidebar {
   flex: 1;
   padding-left: 10px;
+
+  div {
+    position: sticky;
+    top: 15px;
+  }
 }

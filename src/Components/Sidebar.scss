@@ -4,8 +4,14 @@
   @media (max-width: $breakpoint-web) {
     display: none;
   }
-
   margin-top: 15px;
+
+  div {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+  }
+  
 
   .avatar {
     width: 80%;
@@ -29,7 +35,6 @@
       font-size: 1.5rem;
 
       svg {
-        
         color: #7f7f7f;
       }
     }

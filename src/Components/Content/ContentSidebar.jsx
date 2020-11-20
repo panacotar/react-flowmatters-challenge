@@ -7,8 +7,10 @@ import About from "./About";
 const ContentSidebar = () => {
   return (
     <div className="Content-sidebar">
-      <About />
-      <Photos />
+      <div>
+        <About />
+        <Photos />
+      </div>
     </div>
   );
 };
