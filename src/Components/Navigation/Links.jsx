@@ -6,7 +6,6 @@ import "./Links.scss";
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
     height: 20,
   },
 });
@@ -26,8 +25,8 @@ const Links = () => {
         style={{ height: "20px" }}
         value={value}
         onChange={handleChange}
-        variant="fullWidth"
-        aria-label="icon label tabs example"
+        variant="scrollable"
+        aria-label="icon label tabs "
         indicatorColor="primary"
         textColor="primary"
       >
