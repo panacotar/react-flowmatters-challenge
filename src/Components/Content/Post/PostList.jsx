@@ -4,20 +4,21 @@ import "./PostList.scss";
 import postsData from "../../../data/posts.json";
 import Post from "./Post";
 import CardPost from "./CardPost";
-// Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien
-//           diam, suscipit et lacus.
-
-// "img/avatar-xsm.png"
-/////
-// "img/card-img.png"
-//Cras malesuada nulla at urna elementum laoreet. Donec volutpat convallis tellus vitae ornare.
-
-//Sed pulvinar consequat mauris nec aliquam. Sed eget condimentum justo, ut consectetur neque. Vestibulum pharetra sagittis dui, eget sodales elit tincidunt mollis. Duis non nisl.
+import Slider from "../Slider/Slider";
 
 const PostList = () => {
   const currentUserAvatar = "img/avatar-xsm.png";
   return (
     <div className="Post-list">
+    <Post key={Math.random()}
+      description="
+Morbi quis bibendum eros. Nullam eu sapien ut augue viverra elementum vitae porta tellus."
+      currentUser={currentUserAvatar}
+      likes={6}
+      >
+      <Slider />
+
+    </Post>
       {postsData.map((post) => {
         return (
           <Post
@@ -35,18 +36,6 @@ const PostList = () => {
           </Post>
         );
       })}
-      {/* <Post
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien diam, suscipit et lacus."
-        currentUser={currentUserAvatar}
-        likes={0}
-      >
-        <CardPost
-          image="img/card-img.png"
-          title="Cras malesuada nulla at urna elementum laoreet. Donec volutpat convallis tellus vitae ornare."
-          description="Sed pulvinar consequat mauris nec aliquam. Sed eget condimentum justo, ut consectetur neque. Vestibulum pharetra sagittis dui, eget sodales elit tincidunt mollis. Duis non nisl."
-          link="PERSPECTIVE.FM"
-        />
-      </Post> */}
     </div>
   );
 };
