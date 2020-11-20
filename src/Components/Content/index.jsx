@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import "./Content.scss";
 import Photos from "./Photos";
 import StatusPost from "./Post/StatusPost";
-import Post from "./Post/Post";
+import PostList from "./Post/PostList";
 import ContentSidebar from "./ContentSidebar";
 
 const Desktop = ({ children }) => {
@@ -23,12 +23,12 @@ const Content = () => {
       <Mobile>
         <Photos />
         <StatusPost />
-        <Post />
+        <PostList />
       </Mobile>
       <Desktop>
         <div className="posts">
           <StatusPost />
-          <Post />
+          <PostList />
         </div>
         <ContentSidebar />
       </Desktop>

@@ -10,10 +10,9 @@ import { FaCamera } from "react-icons/fa";
 import { GiEarthAfricaEurope } from "react-icons/gi";
 import { AiFillLike } from "react-icons/ai";
 import { IoMdShareAlt } from "react-icons/io";
-import { FaCommentAlt } from "react-icons/fa";
+import { MdModeComment } from "react-icons/md";
 
 import "./Post.scss";
-import CardPost from "./CardPost";
 import ToggleBtn from "../ToggleBtn";
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     border: "0.5px solid gray",
     padding: "3px",
-    // width: "100%",
     flexGrow: "1",
   },
   input: {
@@ -38,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Post = () => {
+const Post = ({ description, children, likes, currentUser }) => {
   const classes = useStyles();
 
   return (
@@ -49,32 +47,29 @@ const Post = () => {
         </div>
         <div>
           <p>
-            Flowmatters
+            <span className="page-title">Flowmatters</span>
             <br />
-            23 hrs • <GiEarthAfricaEurope style={{ fontSize: "0.8rem" }} />{" "}
+            23 hrs • <GiEarthAfricaEurope style={{ fontSize: "0.9rem", color: "#90949c" }} />{" "}
           </p>
         </div>
       </div>
       <div className="post-description">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien
-          diam, suscipit et lacus.
-        </p>
+        <p>{description}</p>
       </div>
       <div className="card-post">
-        <CardPost />
+        {children}
         <hr />
       </div>
       <div className="post-actions">
         <ToggleBtn inline text="Like" icon={<AiFillLike />} />
-        <ToggleBtn inline text="Comment" icon={<FaCommentAlt />} />
+        <ToggleBtn inline text="Comment" icon={<MdModeComment />} />
         <ToggleBtn inline text="Share" icon={<IoMdShareAlt />} />
       </div>
       <div className="post-comment">
-        <AiFillLike className="liked" />
+        { likes ? <img src="img/liked.png" className="liked" alt="Liked Icon" /> : ""}
         <div className="comment">
           <div className="user-avatar-comment">
-            <img src="img/avatar-xsm.png" alt="Flowmatters avatar" />
+            <img src={currentUser} alt="Flowmatters avatar" />
           </div>
 
           <FormControl className={classes.root}>

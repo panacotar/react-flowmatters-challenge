@@ -1,6 +1,8 @@
 @import "../../variables.scss";
 
 .Bottom-nav {
+  margin-top: 55px;
+  
   @media (min-width: $breakpoint-web) {
     display: none;
   }
