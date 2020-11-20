@@ -4,12 +4,12 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 import "./App.scss";
-import NavBar from "./Navbar";
+import NavBar from "./Navigation/Navbar";
 import Header from "./Header";
-import Links from "./Content/Links";
-import SideBar from "./Sidebar";
+import Links from "./Navigation/Links";
+import SideBar from "./Navigation/Sidebar";
 import Content from "./Content";
-import BottomNav from "./Bottom-nav/BottomNav";
+import BottomNav from "./Navigation/Bottom-nav/BottomNav";
 
 function App() {
   const theme = createMuiTheme({

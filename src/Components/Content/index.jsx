@@ -5,7 +5,7 @@ import "./Content.scss";
 import Photos from "./Photos";
 import StatusPost from "./Post/StatusPost";
 import PostList from "./Post/PostList";
-import ContentSidebar from "./ContentSidebar";
+import ContentSidebar from "../Navigation/ContentSidebar";
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 768 });

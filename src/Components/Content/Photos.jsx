@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./Photos.scss";
 import data from "../../data/photos-src.json";
-import PhotoModal from "../Modal/PhotoModal";
+import PhotoModal from "../Common/Modal/PhotoModal";
 
 const Photos = () => {
   const [open, setOpen] = useState(false);

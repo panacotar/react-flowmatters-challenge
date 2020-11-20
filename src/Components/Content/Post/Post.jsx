@@ -13,7 +13,7 @@ import { IoMdShareAlt } from "react-icons/io";
 import { MdModeComment } from "react-icons/md";
 
 import "./Post.scss";
-import ToggleBtn from "../ToggleBtn";
+import ToggleBtn from "../../Common/ToggleBtn";
 
 const useStyles = makeStyles((theme) => ({
   root: {

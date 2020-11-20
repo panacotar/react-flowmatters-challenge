@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./ContentSidebar.scss";
-import Photos from "./Photos";
-import About from "./About";
+import Photos from "../Content/Photos";
+import About from "../Content/About";
 
 const ContentSidebar = () => {
   return (

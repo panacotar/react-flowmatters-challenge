@@ -3,8 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Grow from "@material-ui/core/Grow";
 
-import "./PhotoModal.scss";
-
 const useStyles = makeStyles(() => ({
   paper: {
     margin: "auto",
