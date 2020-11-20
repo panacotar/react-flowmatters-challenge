@@ -38,9 +38,8 @@ function App() {
             <Links />
             <Content />
           </div>
-
-          <BottomNav />
         </div>
+        <BottomNav />
       </div>
     </ThemeProvider>
   );
