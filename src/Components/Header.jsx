@@ -13,7 +13,7 @@ import { FaFacebookMessenger } from "react-icons/fa";
 import { HiDotsHorizontal } from "react-icons/hi";
 
 import "./Header.scss";
-import ToggleBtn from "./Content/ToggleBtn";
+import ToggleBtn from "./Common/ToggleBtn";
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 768 });

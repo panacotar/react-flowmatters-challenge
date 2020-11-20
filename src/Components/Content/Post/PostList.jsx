@@ -1,10 +1,9 @@
 import React from "react";
 
-import "./PostList.scss";
 import postsData from "../../../data/posts.json";
 import Post from "./Post";
 import CardPost from "./CardPost";
-import Slider from "../Slider/Slider";
+import Slider from "../../Common/Slider/Slider";
 
 const PostList = () => {
   const currentUserAvatar = "img/avatar-xsm.png";
