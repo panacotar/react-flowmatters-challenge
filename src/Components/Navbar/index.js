@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import { IoIosArrowBack } from "react-icons/io";
@@ -24,8 +24,31 @@ const Mobile = ({ children }) => {
 };
 
 const NavBar = () => {
+  const [fixed, setFixed] = useState(false);
+
+  const isDesktop = useMediaQuery({ minWidth: 768 });
+
+  useEffect(() => {
+    if (isDesktop) {
+      const handleScroll = () => {
+        const offset = window.scrollY;
+
+        if (offset > 200) {
+          setFixed(true);
+        } else {
+          setFixed(false);
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return function cleanup() {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [fixed, isDesktop]);
   return (
-    <div className="navbar">
+    <div id="Navbar" className={fixed && isDesktop ? "navbar fixed" : "navbar"}>
       <Mobile>
         <IoIosArrowBack className="back-arr" />
         <SearchInput />
